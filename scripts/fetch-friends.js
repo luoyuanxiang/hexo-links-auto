@@ -56,7 +56,7 @@ async function getFriendLinkIssues() {
             owner: config.owner,
             repo: config.repo,
             state: 'open', // 只获取未关闭的Issue
-            per_page: 100
+            per_page: 1
         });
         return issues;
     } catch (error) {
@@ -130,6 +130,8 @@ async function main() {
             const friendLink = await processIssue(issue);
             if (friendLink) {
                 friendLinks.push(friendLink);
+                // 保存友链信息到文件
+                saveLinks(friendLinks)
                 // 添加成功评论并关闭Issue
                 await addComment(issue.number, '感谢您的友链申请！您的信息已被添加到我的博客。');
                 await closeIssue(issue.number);
@@ -139,8 +141,6 @@ async function main() {
                 await closeIssue(issue.number);
             }
         }
-        // 保存友链信息到文件
-        saveLinks(friendLinks)
         console.log(`成功提取 ${friendLinks.length} 个友链信息`);
         return friendLinks;
     } catch (error) {

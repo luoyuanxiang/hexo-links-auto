@@ -16,20 +16,6 @@ body:
         - 博客图标：https://cdn.luoyuanxiang.top/logo/logo.webp
         - 博客描述：收录技术、生活与思考的零散片段
         - 博客首图：https://cdn.luoyuanxiang.top/home.webp
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: 检查清单
-      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。
-      options:
-        - required: true
-          label: 合法的、非营利性、无商业广告、无木马植入。
-        - required: false
-          label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，且至少稳定运行半年。
-        - required: false
-          label: 无违反国家相关法律法规和道德底线的内容，不涉反动言论和政治敏感话题。
-        - required: false
-          label: 与 **博主** 有至少 2 次有效互动（有内容的留言或者 issue 等）。
   - type: input
     id: name
     attributes:
