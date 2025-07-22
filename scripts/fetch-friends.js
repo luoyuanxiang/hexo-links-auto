@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
 // 配置信息
 const config = {
     owner: 'luoyuanxiang', // GitHub用户名
-    repo: 'hexo-friendly-links',       // 仓库名称
+    repo: 'hexo-links-auto',       // 仓库名称
     token: process.env.GH_TOKEN // GitHub个人访问令牌
 };
 // 创建Octokit实例
