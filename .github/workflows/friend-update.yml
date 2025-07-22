@@ -1,9 +1,8 @@
-name: ISSUE 获取友链
+name: Process New Issue
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *' # 每天执行一次
+  issues:
+    types: [opened]  # 当Issue被创建时触发
 
 jobs:
   update:
