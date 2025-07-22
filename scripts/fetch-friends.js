@@ -1,7 +1,7 @@
+const { Octokit } = require('@octokit/rest');
+const yaml = require('js-yaml');
 const fs = require('fs').promises;
 const path = require('path');
-const {Octokit} = require('@octokit/rest');
-const yaml = require('js-yaml');
 
 // 配置信息
 const config = {
@@ -154,6 +154,9 @@ async function main() {
  * @param friendLinks
  */
 function saveLinks(friendLinks) {
+    if (!friendLinks) {
+        return;
+    }
     let fileContents
     try {
         fileContents = fs.readFile(path.join(__dirname, '../source/_data/link.yml'), 'utf8');
