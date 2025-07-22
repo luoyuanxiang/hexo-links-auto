@@ -75,11 +75,7 @@ async function processIssue(issue) {
         const isValid = requiredFields.every(field => friendLink[field]);
         if (isValid) {
             return {
-                ...friendLink,
-                issueNumber: issue.number,
-                createdAt: issue.created_at,
-                updatedAt: issue.updated_at,
-                state: issue.state
+                ...friendLink
             };
         } else {
             console.log(`Issue #${issue.number} 缺少必要字段，已忽略`);
