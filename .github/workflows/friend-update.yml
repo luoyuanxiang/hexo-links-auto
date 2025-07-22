@@ -1,0 +1,40 @@
+name: ISSUE 获取友链
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # 每天执行一次
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install @octokit/rest js-yaml
+
+      - name: Fetch friend links
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: node scripts/fetch-friends.js
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "🤖 Auto-update files via GitHub Actions"
+          commit_user_name: luoyuanxiang
+          commit_user_email: 1141306760@qq.com
+          commit_options: "--signoff"
+          branch: ${{ github.ref_name }}
+          file_pattern: source/_data/link.yml  # 指定需要提交的文件，支持通配符
+          push_options: "--force"
+          skip_dirty_check: false

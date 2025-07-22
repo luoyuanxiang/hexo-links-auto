@@ -1,0 +1,30 @@
+name: 更新友链信息
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'source/_data/link.yml'  # 源文件路径，修改为实际路径
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.GH_TOKEN }}  # 可选，仅当需要特殊权限时使用
+
+      - name: 更新友链信息到目标仓库
+        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+        with:
+          source_file: 'source/_data/link.yml'  # 源文件路径，修改为实际路径
+          destination_repo: 'luoyuanxiang/luoyuanxiang-source'  # 目标仓库，修改为实际仓库
+          destination_folder: 'source/_data'  # 目标文件夹，留空为仓库根目录
+          destination_branch: 'main'  # 目标分支
+          user_email: '1141306760@qq.com'
+          user_name: 'luoyuanxiang'
+          commit_message: '更新友链信息'

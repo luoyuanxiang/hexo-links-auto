@@ -1,0 +1,119 @@
+- class_name: 框架
+  flink_style: flexcard
+  hundredSuffix: ''
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: >-
+        https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网站框架
+    - name: anzhiyu主题
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: >-
+        https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+- class_name: 推荐博客
+  flink_style: telescopic
+  hundredSuffix: ''
+  link_list:
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+      descr: 生活明朗，万物可爱
+      siteshot: >-
+        https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+      color: vip
+      tag: 技术
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://img.zhheo.com/i/67d8fa75943e4.webp
+      descr: 分享设计与科技生活
+      siteshot: https://img.zhheo.com/i/67d8fb3c51399.webp
+      color: vip
+      tag: 生活
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      descr: Future is now 🍭🍭🍭
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cc.webp
+      color: vip
+      tag: 技术
+    - name: Efu
+      link: https://www.efu.me
+      descr: An Open Source worker.
+      avatar: https://s3.qjqq.cn/47/660a7ece07609.webp!color
+      siteshot: https://s3.qjqq.cn/47/660a7ece07609.webp!color
+      tag: 技术
+      color: vip
+    - name: 琅環书生
+      descr: 无远弗届，皆有可能
+      link: https://blog.chn.us.kg
+      avatar: https://images.chn.us.kg/hexo/avatar.webp
+      siteshot: https://images.chn.us.kg/hexo/website.webp
+      feed: https://blog.chn.us.kg/atom.xml
+      tag: 技术
+      color: vip
+    - name: Mo的记事簿
+      link: https://blog.xiowo.net/
+      avatar: https://blog.xiowo.net/img/avatar.png
+      descr: 万年鸽王，哈哈OvO
+      siteshot: https://bu.dusays.com/2025/06/17/685044d6bca69.png
+      tag: 技术
+      color: vip
+- class_name: 小伙伴
+  class_desc: 那些人，那些事
+  flink_style: anzhiyu
+  hundredSuffix: ''
+  link_list:
+    - name: 南方嘉木
+      link: https://blog.cancin.cn/
+      avatar: https://blog.cancin.cn/img/avatar.webp
+      descr: 不畏将来，不念过往。
+      siteshot: https://blog.cancin.cn/img/siteshot.webp
+    - name: June's Blog
+      link: https://blog.june-pj.cn/
+      avatar: https://gitlab.com/June_PJ/PicGo-PJ/raw/main/img/avatar.webp
+      descr: 遇事不决，可问春风
+      siteshot: https://gitlab.com/June_PJ/PicGo-PJ/raw/main/img/siteshot.webp
+    - name: isYangs
+      link: https://isyangs.cn
+      avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg
+      descr: 一个前端Bug构造师的博客
+    - name: DearXuan
+      link: https://blog.dearxuan.com
+      avatar: https://static.dearxuan.com/resource/logo.png
+      screenshot: https://static.dearxuan.com/resource/screenshot.jpg
+      descr: 编程,算法
+    - name: twintea's blog🐣
+      link: https://blog.twintea.top
+      avatar: https://avatars.githubusercontent.com/u/98571056?v=4
+      descr: May all the beauty be blessed.
+    - name: 顾梦
+      descr: 不想满心遗憾，那就全力以赴.
+      link: https://blog.gumengyo.top
+      avatar: https://cloud.gumengyo.top/avatar.png
+      siteshot: https://cloud.gumengyo.top/siteshot.png
+    - name: 枫叶
+      link: https://blog.aqcoder.cn
+      avatar: https://blog.aqcoder.cn/img/avatar.png
+      descr: 分享知识，认识世界
+    - name: Ethan.Tzy
+      link: https://fe32.top/
+      avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
+      descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
+      siteshot: https://bu.dusays.com/2023/07/16/64b400bf8e546.jpg
+    - name: 学习与生活
+      link: https://www.imql.life/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=834471527&s=640
+      descr: It’s a beautiful day!
+    - name: 阿定の小站
+      link: https://blog.saop.cc/
+      avatar: https://saop.cc/images/icon/logo.png
+      descr: 我们终会相遇相知，在那悠远的苍穹
+      siteshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
+    - name: Tianlin_Zz
+      link: https://linjiangyu.com
+      avatar: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/fa.jpg
+      descr: 正因为是一张白纸 才可以随心所欲地描绘地图
+      siteshot: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/siteshot.jpg

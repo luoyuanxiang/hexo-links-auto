@@ -1,0 +1,72 @@
+name: 友链模板
+description: 自助友链申请模板
+labels: []
+assignees:
+  - 老罗の小站
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 填写说明
+        欢迎自助申请本站友链，**星号(*)为必填项**。审核通过后会实时同步到博客！
+        > 申请前请先添加本站友链，谢谢！
+         本站友链信息如下：
+        - 博客名称：老罗の小站
+        - 博客地址：https://luoyuanxiang.top
+        - 博客图标：https://cdn.luoyuanxiang.top/logo/logo.webp
+        - 博客描述：收录技术、生活与思考的零散片段
+        - 博客首图：https://cdn.luoyuanxiang.top/home.webp
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 检查清单
+      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。
+      options:
+        - required: true
+          label: 合法的、非营利性、无商业广告、无木马植入。
+        - required: false
+          label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，且至少稳定运行半年。
+        - required: false
+          label: 无违反国家相关法律法规和道德底线的内容，不涉反动言论和政治敏感话题。
+        - required: false
+          label: 与 **博主** 有至少 2 次有效互动（有内容的留言或者 issue 等）。
+  - type: input
+    id: name
+    attributes:
+      label: 博客名称
+      description: 请输入您的博客名称。
+      placeholder: "如: 老罗の小站"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: 博客地址
+      description: 请输入您博客的主页地址，包含https。
+      placeholder: "如: https://luoyuanxiang.top"
+    validations:
+      required: true
+  - type: input
+    id: avatar
+    attributes:
+      label: 博客图标
+      description: 请输入您博客的图标地址，包含https，请检查是否能正常访问，且无跨域问题。
+      placeholder: "如: https://cdn.luoyuanxiang.top/logo/logo.webp"
+    validations:
+      required: true
+  - type: input
+    id: descr
+    attributes:
+      label: 博客描述
+      description: 请输入您博客的描述。
+      placeholder: "如: 收录技术、生活与思考的零散片段"
+    validations:
+      required: true
+  - type: input
+    id: siteshot
+    attributes:
+      label: 博客首页
+      description: 请输入您的博客首页地址，包含https。
+      placeholder: "如: https://cdn.luoyuanxiang.top/home.webp"
+    validations:
+      required: false
